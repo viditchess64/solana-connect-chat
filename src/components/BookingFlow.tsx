@@ -10,7 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 
 const BOOKING_PRICE_SOL = 0.1;
 const RECIPIENT_WALLET = "9YsbyWnNegmSvUPoXqt4qo1km9grX8dBc6gQz7PAKEGY";
-const GOOGLE_MEET_URL = "https://meet.google.com/dummy-meet-link";
+const GOOGLE_MEET_URL = "https://meet.google.com/esx-yrtb-jxu";
 
 export const BookingFlow = () => {
   const { publicKey, sendTransaction } = useWallet();
@@ -39,7 +39,7 @@ export const BookingFlow = () => {
     setIsProcessing(true);
 
     try {
-      const connection = new Connection("https://api.devnet.solana.com", "confirmed");
+      const connection = new Connection("https://api.mainnet-beta.solana.com", "confirmed");
       
       const transaction = new Transaction().add(
         SystemProgram.transfer({
