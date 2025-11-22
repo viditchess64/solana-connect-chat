@@ -11,7 +11,7 @@ interface Props {
 }
 
 export const SolanaWalletProvider: FC<Props> = ({ children }) => {
-  const network = clusterApiUrl('mainnet-beta');
+  const network = "https://mainnet.helius-rpc.com/?api-key=5935eb6e-9c4e-4031-b4b6-f1290106d2d6";
 
   const wallets = useMemo(
     () => [
