@@ -11,8 +11,7 @@ interface Props {
 }
 
 export const SolanaWalletProvider: FC<Props> = ({ children }) => {
-  // Use devnet for testing, change to 'mainnet-beta' for production
-  const network = clusterApiUrl('devnet');
+  const network = clusterApiUrl('mainnet-beta');
 
   const wallets = useMemo(
     () => [
