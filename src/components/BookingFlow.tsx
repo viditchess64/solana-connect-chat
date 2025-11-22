@@ -8,8 +8,7 @@ import { Calendar, Clock, Video, ArrowRight, CheckCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const BOOKING_PRICE_SOL = 0.1;
-// IMPORTANT: Replace with your actual Solana wallet address
-const RECIPIENT_WALLET = "YOUR_WALLET_ADDRESS_HERE";
+const RECIPIENT_WALLET = "9YsbyWnNegmSvUPoXqt4qo1km9grX8dBc6gQz7PAKEGY";
 
 export const BookingFlow = () => {
   const { publicKey, sendTransaction } = useWallet();
