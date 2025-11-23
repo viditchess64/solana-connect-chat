@@ -13,7 +13,7 @@ dist-ssr
 *.local
 
 #i am adding .env inside .gitignore which should be private
-.gitignore
+.env
 
 # Editor directories and files
 .vscode/*
