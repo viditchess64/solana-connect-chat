@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+#i am adding .env inside .gitignore which should be private
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
